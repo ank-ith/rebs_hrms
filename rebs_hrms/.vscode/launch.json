@@ -1,0 +1,60 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "REBS HRMS (debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=FLUTTER_ENV=debug"],
+      "flutterMode": "debug"
+    },
+    {
+      "name": "REBS HRMS (profile)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "REBS HRMS (release)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "REBS HRMS — geofence bypassed",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "debug",
+      "args": ["--dart-define=DEBUG_MOCK_LOCATION=true"]
+    },
+    {
+      "name": "Mock API Server",
+      "request": "launch",
+      "type": "dart",
+      "program": "mock_server/bin/server.dart",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Flutter Tests",
+      "request": "launch",
+      "type": "dart",
+      "program": "test/",
+      "flutterMode": "debug"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Server + App",
+      "configurations": ["Mock API Server", "REBS HRMS (debug)"],
+      "presentation": {
+        "hidden": false,
+        "group": "Full Stack",
+        "order": 1
+      }
+    }
+  ]
+}

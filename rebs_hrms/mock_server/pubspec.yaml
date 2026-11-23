@@ -1,0 +1,9 @@
+name: rebs_mock_server
+description: Mock HTTP API server for REBS HRMS Flutter assignment
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4

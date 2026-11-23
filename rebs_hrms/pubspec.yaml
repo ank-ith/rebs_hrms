@@ -1,0 +1,45 @@
+name: rebs_hrms
+description: REBS HRMS - Offline-Capable Employee Workspace for Flutter assignment.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^8.1.6
+  bloc: ^8.1.4
+  equatable: ^2.0.5
+
+  # HTTP client
+  dio: ^5.7.0
+
+  # Local persistence
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Location & permissions
+  geolocator: ^13.0.2
+  permission_handler: ^11.3.1
+
+  # Network detection
+  connectivity_plus: ^6.1.1
+
+  # Utilities
+  uuid: ^4.5.1
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mocktail: ^1.0.4
+  bloc_test: ^9.1.7
+
+flutter:
+  uses-material-design: true
